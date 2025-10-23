@@ -14,8 +14,21 @@ The core system is built upon the **YOLOv11 Nano (YOLOv11n)** model, which provi
 * **Efficient Model:** Utilizes the lightweight **YOLOv11n** model for optimal speed and resource efficiency.
 
 ***
+| Metric | Value | 
+| :--- | :--- | 
+| **All Classes mAP@0.5** | **0.940** | 
+| Helmet Precision | 0.956 | 
+| No-Helmet Precision | 0.924 |
 
 ## ⚙️ Technical Details
+
+| File Name | Description | 
+| :--- | :--- | 
+| **`correction.py`** | **Annotation Correction Utility.** A script likely used to correct or clean up initial dataset annotations, paths, or class indices before final conversion. | 
+| **`json_to_yolo.py`** | **Annotation Conversion Script.** Converts raw annotations (e.g., JSON or XML format) from the initial annotation tool into the simple, plain-text YOLO format (`.txt` files) required for training. | 
+| **`split_dataset.py`** | **Data Management Script.** Used to randomly split the complete set of images and corresponding labels into `train`, `val` (validation), and `test` subdirectories for model training. |
+
+
 
 | Component | Value/Version | Purpose |
 | :--- | :--- | :--- |
