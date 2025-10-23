@@ -34,6 +34,11 @@ The core system is built upon the **YOLOv11 Nano (YOLOv11n)** model, which provi
 
 Ensure you have a modern NVIDIA GPU and the appropriate drivers installed, along with **CUDA (v12.1 or newer)** for GPU acceleration.
 
+### 📥 Dataset Access
+Due to its large size, the custom dataset is not included in the repository.
+
+* **Download Link:** https://www.kaggle.com/datasets/andrewmvd/hard-hat-detection
+
 ### 2. Environment Setup
 
 ```bash
@@ -49,9 +54,3 @@ python -m venv venv
 # Install required packages
 pip install ultralytics torch==2.5.1+cu121 torchvision torchaudio --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
 pip install opencv-python playsound gTTS
-
-
-### 📥 Dataset Access
-Due to its large size, the custom dataset is not included in the repository.
-
-* **Download Link:** https://www.kaggle.com/datasets/andrewmvd/hard-hat-detection
