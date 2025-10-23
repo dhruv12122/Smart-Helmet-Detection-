@@ -1,0 +1,55 @@
+# --------------------------------
+# General OS/IDE files
+# --------------------------------
+.DS_Store
+.vscode/
+Thumbs.db
+
+# --------------------------------
+# Python/Virtual Environment
+# --------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment files
+venv/
+.venv/
+env/
+.env/
+
+# Dependency Manager/Package files
+pip-log.txt
+pip-delete-this-file.txt
+.history/
+
+# --------------------------------
+# Ultralytics/YOLO Specific Files
+# --------------------------------
+# This is CRITICAL. It ignores your entire runs/ directory which contains
+# HUGE model weights (*.pt), training logs, and prediction output images/videos.
+runs/
+!runs/detect/
+!runs/segment/
+
+# Model files generated during export (onnx, saved_model, etc.)
+*.onnx
+*.engine
+*.tflite
+*.pb
+*.json
+
+# --------------------------------
+# Project-Specific Output/Local Data
+# --------------------------------
+# Your custom audio file
+safety_alert.mp3
+
+# Jupyter Notebook Checkpoints (if you use notebooks)
+.ipynb_checkpoints
+
+# Logs and debug files
+*.log
+debug.txt
